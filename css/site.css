@@ -7,6 +7,8 @@
 
 body {
     color: var(--cf-dark-color);
+    font-size: 1rem;
+    background-color: var(--cf-light-color);
 }
 
 nav {
@@ -33,4 +35,18 @@ main>.container {
 
 .socialIcons>a:hover {
     color: var(--cf-secondary-color);
+}
+
+.checklist {
+    list-style: none;
+}
+
+.checklist i {
+    color: var(--cf-secondary-color);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.techIcons {
+    font-size: 5rem;
 }
