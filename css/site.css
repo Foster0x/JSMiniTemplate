@@ -51,7 +51,7 @@ main>.container {
     font-size: 4rem;
 }
 
-.message {
+.messageStyle {
     font-size: 5rem;
     font-weight: bold;
     color: red;
