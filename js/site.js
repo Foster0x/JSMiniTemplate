@@ -6,7 +6,17 @@ function getMessage() {
 
 // Final Step - view
 function displayMessage(message) {
-    let msg = `${message} Stephen Foster`; 
+    // <li class="list-group-item">A list item</li>
+    // let item = `<li class="list-group-item">${message}</li>`;
+
+    // First get the ol element from the page
     element = document.getElementById("results");
-    element.innerHTML = msg;
+    // Next creat a new li element
+    let item = document.createElement("li");
+    // Add classes to the li element
+    item.classList.add("list-group-item");
+    // Set the message for the li element
+    item.innerHTML = message;
+    // Add the new item to the list 
+    element.appendChild(item);
 }
