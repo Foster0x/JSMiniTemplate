@@ -50,3 +50,9 @@ main>.container {
 .techIcons {
     font-size: 4rem;
 }
+
+.message {
+    font-size: 5rem;
+    font-weight: bold;
+    color: red;
+}
