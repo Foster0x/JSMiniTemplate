@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>APP NAME: Coding Challenge by Stephen Foster</title>
+    <title>Reverse A String: Coding Challenge by Stephen Foster</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,6 +22,7 @@
 
     <!-- Custom CSS -->
     <link href="/css/site.css" rel="stylesheet">
+    <link href="/css/prism.css" rel="stylesheet">
 
 </head>
 
@@ -29,7 +30,7 @@
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/index.html"><img src="/img/typingbgdark.png" height="50" width="150"> APP NAME</a>
+            <a class="navbar-brand" href="/index.html"><img src="/img/typingbgdark.png" height="50" width="150"> Reverse A String</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,11 +47,6 @@
                         <a class="nav-link" href="/code.html">The Code</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">The Repo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -58,21 +54,23 @@
 
     <main class="flex-shrink-0">
         <div class="container mt-5">
-            <h1>To-Do List</h1>
-            <div class="row align-items-end">
+            <h1>Reverse A String</h1>
+            <h4>Enter a message and hit the button. The program will print the message in reverse.</h4>
+            <div class="row align-items-end mt-2">
                 <div class="col">
-                    <label for="txtMessage" class="form-label">Item</label>
+                    <label for="txtMessage" class="form-label">Message</label>
                     <input type="text" name="txtMessage" class="form-control" id="txtMessage"
-                        placeholder="Enter An Item">
+                        placeholder="Enter Message">
                 </div>
                 <div class="col">
-                    <button id="btnSubmit" class="btn btn-primary">Add</button>
+                    <button id="btnSubmit" class="btn btn-primary">Reverse Me</button>
                 </div>
             </div>
             <div class="messageStyle mt-5">
-                <ol id="results" class="list-group list-group-numbered">
+                <div id="results" class="">
                     <!--My items will go here  -->
-                </ol>
+                    
+                </div>
             </div>
         </div>
     </main>
