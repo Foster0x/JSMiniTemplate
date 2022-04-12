@@ -1,20 +1,29 @@
 // Sep One - controller/accepts requests
 function getMessage() {
     let msg = document.getElementById("txtMessage").value;
-    displayMessage(msg);
+
+    // Check for empty string
+    if (msg == '') {
+        alert("You must enter a string!");
+    } else {
+        let revMessage = reverseMessageA(msg);
+        displayMessage(revMessage);
+    }
 }
 
-// Final Step - view
-function displayMessage(message) {
+// Business Logic Layer
+function reverseMessageA(msg) {
+    let revMessage = "";
+    // Decrimenting loop
+    for (let index = msg.length - 1; index >= 0; index--) {
+        let char = msg[index];
+        revMessage += char;
+    }
+    return revMessage;
+}
 
-    // First get the ol element from the page
+// Final Step - View
+function displayMessage(message) {
     element = document.getElementById("results");
-    // Next creat a new li element
-    let item = document.createElement("li");
-    // Add classes to the li element
-    item.classList.add("list-group-item");
-    // Set the message for the li element
-    item.innerHTML = message;
-    // Add the new item to the list 
-    element.appendChild(item);
+    element.innerHTML = message;
 }
