@@ -6,6 +6,7 @@ function getMessage() {
     if (msg == '') {
         alert("You must enter a string!");
     } else {
+        msg = msg.toLowerCase();
         let revMessage = reverseMessageA(msg);
         displayMessage(revMessage);
     }
@@ -19,6 +20,12 @@ function reverseMessageA(msg) {
         let char = msg[index];
         revMessage += char;
     }
+    return revMessage;
+}
+
+function reverseMessageB(msg) {
+    let revMessage = "";
+    revMessage = msg.split("").reverse().join("");
     return revMessage;
 }
 
